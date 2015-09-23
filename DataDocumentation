@@ -1,0 +1,85 @@
+/****This is a documentation that describes the format of data and messages****/
+
+
+*DATA:
+The database's name is AppDATA.
+In database there are two collections: users and words.
+data in users:
+    OID _id;
+    int fd;
+    Array loc; //[ double longitude, double latitude ]
+    int skin;
+
+data in words:
+    OID _id;
+    int fd;
+    string(char[]) content;
+    date timestramp;
+
+The words data would only exist for a certain time.
+
+
+*MESSAGES:
+The structure of a message is:
+struct XMessage
+{
+    int user_id;
+    int msg_type;
+    struct MSGDATA
+    {
+        char words[WORDS_LEN];
+        Coordinate loc;
+        int skin;
+    }data;
+};
+There are several message types. Here are their json forms:
+    XMSG_SPEAK: { 
+                    "user_id" : int,
+                    "msg_type" : int,
+                    "words" : char[] 
+                }
+
+    XMSG_MOVE:  { 
+                    "user_id" : int, 
+                    "msg_type" : int, 
+                    "loc" : 
+                    { 
+                        "longitude" : double, 
+                        "latitude" : double 
+                    } 
+                }
+
+    XMSG_INIT:  { 
+                    "user_id" : int, 
+                    "msg_type" : int, 
+                    "loc" : 
+                    { 
+                        "longitude" : double, 
+                        "latitude" : double 
+                    } 
+                    "skin" : int
+                }
+
+    XMSG_DISCONN: 
+                { 
+                    "user_id" : int,
+                    "msg_type" : int,
+                }
+
+    XMSG_USER:  { 
+                    "user_id" : int, 
+                    "msg_type" : int, 
+                    "words" : char[] 
+                    "loc" : 
+                    { 
+                        "longitude" : double, 
+                        "latitude" : double 
+                    } 
+                    "skin" : int
+                }
+
+    XMSG_ID:    { 
+                    "user_id" : int,
+                    "msg_type" : int,
+                }
+
