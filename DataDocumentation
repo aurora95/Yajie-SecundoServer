@@ -25,13 +25,12 @@ struct XMessage
 {
     int user_id;
     int msg_type;
-    struct MSGDATA
-    {
-        char words[WORDS_LEN];
-        Coordinate loc;
-        int skin;
-    }data;
+    Msgdata msgdata;
+    Mapdata mapdata;
+    void toJSON(char* dest);
+    void fromJSON(char* src);
 };
+
 There are several message types. Here are their json forms:
     XMSG_SPEAK: { 
                     "user_id" : int,
@@ -83,3 +82,50 @@ There are several message types. Here are their json forms:
                     "msg_type" : int,
                 }
 
+    XMAPMSG_GETMAP:{
+                    "user_id" : int,
+                    "msg_type" : int,
+                    "loc" : 
+                    { 
+                        "longitude" : double, 
+                        "latitude" : double 
+                    } 
+                }
+
+    XMAPMSG_POSTMAP:{
+                    "user_id" : int,
+                    "msg_type" : int,
+                    "loc" : 
+                    { 
+                        "longitude" : double, 
+                        "latitude" : double 
+                    } ,
+                    "bias" :
+                    {
+                        "x" : int,
+                        "y" : int
+                    },
+                    "length" : int,
+                    "data" : char[]
+                 }
+
+    XMAPMSG_QUERYMAP:{
+                    "user_id" : int,
+                    "msg_type" : int,
+                    "loc" : 
+                    { 
+                        "longitude" : double, 
+                        "latitude" : double 
+                    } 
+                  }
+
+    XMAPMSG_ANSMAP:{
+                    "user_id" : int,
+                    "msg_type" : int,
+                    "loc" : 
+                    { 
+                        "longitude" : double, 
+                        "latitude" : double 
+                    } 
+                    "version" : int64
+                }

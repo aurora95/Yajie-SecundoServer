@@ -46,7 +46,7 @@
 	<netinet/in.h>
 	<arpa/inet.h>
 
-1441901200 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/Settings.h
+1449472383 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/Settings.h
 	"stdio.h"
 
 1439888403 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/mongo/bson/bson.h
@@ -790,12 +790,13 @@
 
 1439913237 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/mongo/version.h
 
-1441900906 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/XHandler.cpp
+1448704716 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/XHandler.cpp
 	"XHandler.h"
 	"XBroadcaster.h"
 	"HandlerBase.h"
 	"XUserInitializer.h"
 	"Settings.h"
+	"User.h"
 	<limits.h>
 	<boost/thread.hpp>
 	<boost/bind.hpp>
@@ -806,7 +807,7 @@
 	<string>
 	<sstream>
 
-1440855745 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/XHandler.h
+1448700384 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/XHandler.h
 	<ev++.h>
 	<stdio.h>
 	<netinet/in.h>
@@ -824,10 +825,11 @@
 	<mongo/bson/bson.h>
 	<mongo/client/dbclient.h>
 
-1441900726 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/XMessage.h
+1449156085 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/XMessage.h
 	"Settings.h"
+	<stdint.h>
 
-1441877100 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/AppServer.cpp
+1449472346 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/AppServer.cpp
 	"AppServer.h"
 	<iostream>
 	<ev++.h>
@@ -841,6 +843,8 @@
 	"TCPHelper.h"
 	"XHandler.h"
 	"Settings.h"
+	"User.h"
+	"MapBlock.h"
 
 1440223041 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/AppServer.h
 	<iostream>
@@ -853,7 +857,7 @@
 	<mongo/client/dbclient.h>
 	"XHandler.h"
 
-1441878928 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/User.cpp
+1448704734 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/User.cpp
 	"User.h"
 	<string.h>
 	<mongo/client/dbclient.h>
@@ -863,7 +867,7 @@
 	<string>
 	<sstream>
 
-1441873325 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/User.h
+1448703740 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/User.h
 	"XMessage.h"
 	<mongo/client/dbclient.h>
 	<mongo/bson/bson.h>
@@ -916,10 +920,11 @@
 	<mongo/bson/bson.h>
 	<mongo/client/dbclient.h>
 
-1441890720 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/XBroadcaster.cpp
+1448702546 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/XBroadcaster.cpp
 	"XBroadcaster.h"
 	"XMessage.h"
 	"Settings.h"
+	"User.h"
 	<limits.h>
 	<boost/thread.hpp>
 	<boost/bind.hpp>
@@ -929,7 +934,7 @@
 1440854707 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/src/HandlerBase.cpp
 	"HandlerBase.h"
 
-1440855306 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/include/HandlerBase.h
+1448702049 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/include/HandlerBase.h
 	<ev++.h>
 	<stdio.h>
 	<netinet/in.h>
@@ -944,7 +949,7 @@
 	<mongo/bson/bson.h>
 	<mongo/client/dbclient.h>
 
-1441890871 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/XUserInitializer.cpp
+1448702560 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/XUserInitializer.cpp
 	"XUserInitializer.h"
 	"User.h"
 	"Settings.h"
@@ -954,7 +959,7 @@
 	<mongo/client/dbclient.h>
 	<vector>
 
-1440915535 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/HandlerBase.h
+1448702049 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/HandlerBase.h
 	<ev++.h>
 	<stdio.h>
 	<netinet/in.h>
@@ -972,10 +977,202 @@
 1440854707 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/HandlerBase.cpp
 	"HandlerBase.h"
 
-1441878788 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/XMessage.cpp
+1449377947 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/XMessage.cpp
 	"XMessage.h"
+	<iostream>
 	<boost/property_tree/ptree.hpp>
 	<boost/property_tree/json_parser.hpp>
 	<string>
 	<sstream>
+
+1449676388 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/include/MapBlock.h
+	"XMessage.h"
+	<mongo/client/dbclient.h>
+	<mongo/bson/bson.h>
+
+1449676114 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/src/MapBlock.cpp
+	"MapBlock.h"
+	<string.h>
+	<mongo/client/dbclient.h>
+	<mongo/bson/bson.h>
+	<boost/property_tree/ptree.hpp>
+	<boost/property_tree/json_parser.hpp>
+	<string>
+	<sstream>
+
+1440223041 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/include/AppServer.h
+	<iostream>
+	<ev++.h>
+	<stdio.h>
+	<netinet/in.h>
+	<stdlib.h>
+	<string.h>
+	<mongo/bson/bson.h>
+	<mongo/client/dbclient.h>
+	"XHandler.h"
+
+1449578172 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/include/XHandler.h
+	<ev++.h>
+	<stdio.h>
+	<netinet/in.h>
+	<sys/socket.h>
+	<unistd.h>
+	<stdlib.h>
+	<boost/thread.hpp>
+	<boost/bind.hpp>
+	<queue>
+	"Settings.h"
+	"XMessage.h"
+	"XBroadcaster.h"
+	"XUserInitializer.h"
+	"HandlerBase.h"
+	<mongo/bson/bson.h>
+	<mongo/client/dbclient.h>
+
+1454395924 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/include/Settings.h
+	"stdio.h"
+
+1452764190 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/include/XMessage.h
+	"Settings.h"
+	<stdint.h>
+
+1449578147 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/include/XBroadcaster.h
+	<ev++.h>
+	<stdio.h>
+	<netinet/in.h>
+	<sys/socket.h>
+	<unistd.h>
+	<stdlib.h>
+	<boost/thread.hpp>
+	<boost/bind.hpp>
+	<queue>
+	"Settings.h"
+	"XMessage.h"
+	"HandlerBase.h"
+	<mongo/bson/bson.h>
+	<mongo/client/dbclient.h>
+
+1449578153 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/include/XUserInitializer.h
+	<ev++.h>
+	<stdio.h>
+	<netinet/in.h>
+	<sys/socket.h>
+	<unistd.h>
+	<stdlib.h>
+	<boost/thread.hpp>
+	<boost/bind.hpp>
+	<queue>
+	"Settings.h"
+	"XMessage.h"
+	"HandlerBase.h"
+	<mongo/bson/bson.h>
+	<mongo/client/dbclient.h>
+
+1455352229 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/src/AppServer.cpp
+	"AppServer.h"
+	<iostream>
+	<ev++.h>
+	<stdio.h>
+	<netinet/in.h>
+	<stdlib.h>
+	<string.h>
+	<netinet/tcp.h>
+	"mongo/bson/bson.h"
+	"mongo/client/dbclient.h"
+	"TCPHelper.h"
+	"XHandler.h"
+	"Settings.h"
+	"User.h"
+
+1440214453 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/include/TCPHelper.h
+	<stdlib.h>
+	<unistd.h>
+	<string.h>
+	<ctype.h>
+	<setjmp.h>
+	<signal.h>
+	<sys/time.h>
+	<sys/types.h>
+	<sys/wait.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<sys/mman.h>
+	<errno.h>
+	<math.h>
+	<pthread.h>
+	<semaphore.h>
+	<sys/socket.h>
+	<netdb.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+
+1455351962 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/include/User.h
+	"XMessage.h"
+	<mongo/client/dbclient.h>
+	<mongo/bson/bson.h>
+
+1455352253 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/src/User.cpp
+	"User.h"
+	<string.h>
+	<mongo/client/dbclient.h>
+	<mongo/bson/bson.h>
+	<boost/property_tree/ptree.hpp>
+	<boost/property_tree/json_parser.hpp>
+	<string>
+	<sstream>
+	"XMongoDBService.h"
+
+1449578288 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/src/XBroadcaster.cpp
+	"XBroadcaster.h"
+	"XMessage.h"
+	"Settings.h"
+	"User.h"
+	<limits.h>
+	<boost/thread.hpp>
+	<boost/bind.hpp>
+	<mongo/bson/bson.h>
+	<mongo/client/dbclient.h>
+
+1449578338 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/src/XHandler.cpp
+	"XHandler.h"
+	"XBroadcaster.h"
+	"HandlerBase.h"
+	"XUserInitializer.h"
+	"Settings.h"
+	"User.h"
+	<limits.h>
+	<boost/thread.hpp>
+	<boost/bind.hpp>
+	<mongo/bson/bson.h>
+	<mongo/client/dbclient.h>
+	<boost/property_tree/ptree.hpp>
+	<boost/property_tree/json_parser.hpp>
+	<string>
+	<sstream>
+
+1452764947 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/src/XMessage.cpp
+	"XMessage.h"
+	<iostream>
+	<boost/property_tree/ptree.hpp>
+	<boost/property_tree/json_parser.hpp>
+	<string>
+	<sstream>
+
+1449578306 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/src/XUserInitializer.cpp
+	"XUserInitializer.h"
+	"User.h"
+	"Settings.h"
+	<boost/thread.hpp>
+	<boost/bind.hpp>
+	<mongo/bson/bson.h>
+	<mongo/client/dbclient.h>
+	<vector>
+
+1454410164 source:/home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/src/XMongoDBService.cpp
+	"XMongoDBService.h"
+
+1454410200 /home/aurora/Desktop/MapSocial_AppTCPServer/MapSocial_AppTCPServer/include/XMongoDBService.h
+	<mongo/bson/bson.h>
+	<mongo/client/dbclient.h>
+	"Settings.h"
 

@@ -39,22 +39,22 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="AppServer.cpp" />
-		<Unit filename="AppServer.h" />
-		<Unit filename="HandlerBase.h" />
-		<Unit filename="Settings.h" />
-		<Unit filename="TCPHelper.h" />
-		<Unit filename="User.cpp" />
-		<Unit filename="User.h" />
-		<Unit filename="XBroadcaster.cpp" />
-		<Unit filename="XBroadcaster.h" />
-		<Unit filename="XHandler.cpp" />
-		<Unit filename="XHandler.h" />
-		<Unit filename="XMessage.cpp" />
-		<Unit filename="XMessage.h" />
-		<Unit filename="XUserInitializer.cpp" />
-		<Unit filename="XUserInitializer.h" />
+		<Unit filename="include/AppServer.h" />
+		<Unit filename="include/HandlerBase.h" />
+		<Unit filename="include/Settings.h" />
+		<Unit filename="include/TCPHelper.h" />
+		<Unit filename="include/User.h" />
+		<Unit filename="include/XBroadcaster.h" />
+		<Unit filename="include/XHandler.h" />
+		<Unit filename="include/XMessage.h" />
+		<Unit filename="include/XUserInitializer.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/AppServer.cpp" />
+		<Unit filename="src/User.cpp" />
+		<Unit filename="src/XBroadcaster.cpp" />
+		<Unit filename="src/XHandler.cpp" />
+		<Unit filename="src/XMessage.cpp" />
+		<Unit filename="src/XUserInitializer.cpp" />
 		<Extensions>
 			<envvars />
 			<code_completion />
